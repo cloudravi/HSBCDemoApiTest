@@ -1,0 +1,33 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fb4789a30ad, pid=10311, tid=10330
+#
+# JRE version: OpenJDK Runtime Environment (11.0.9.1+1) (build 11.0.9.1+1-Ubuntu-0ubuntu1.20.04)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.9.1+1-Ubuntu-0ubuntu1.20.04, mixed mode, sharing, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x30ad]
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/share/apport/apport %p %s %c %d %P %E" (or dumping to /home/ahaan/eclipse-workspace/restApi.Automation/core.10311)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugs.launchpad.net/ubuntu/+source/openjdk-lts
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:34593 -ea -javaagent:/home/ahaan/.eclipse/360744286_linux_gtk_x86_64/configuration/org.eclipse.osgi/222/0/.cp/lib/javaagent-shaded.jar -Dfile.encoding=UTF-8 org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 36903 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames cucumberRunner.TestRunner
+
+Host: AMD FX(tm)-6100 Six-Core Processor, 6 cores, 3G, Ubuntu 20.04.1 LTS
+Time: Fri Jan 15 18:14:22 2021 IST elapsed time: 198.542947 seconds (0d 0h 3m 18s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007fb47412f800):  JavaThread "Signal Dispatcher" daemon [_thread_in_vm, id=10330, stack(0x00007fb44eba7000,0x00007fb44eca8000)]
+
+Stack: [0x00007fb44eba7000,0x00007fb44eca8000],  sp=0x00007fb44eca51f0,  free space=1016k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libjimage.so+0x30ad]
+C  [libjimage.so+0x3da2]
+C  [libjimage.so+0x42b1]  JIMAGE_FindResource+0xf1
+V  [libjvm.so+0x5ae8d1]
