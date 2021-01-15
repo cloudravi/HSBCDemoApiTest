@@ -6,6 +6,8 @@ import java.io.PrintStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 import java.util.Date;
@@ -55,5 +57,11 @@ public class Utils {
 		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		System.out.println(dateFormat.format(yesterday()) + "inside yesterday method");
 		return dateFormat.format(yesterday());
+	}
+
+	private String currentDate() {
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		LocalDateTime now = LocalDateTime.now();
+		return dtf.format(now);
 	}
 }

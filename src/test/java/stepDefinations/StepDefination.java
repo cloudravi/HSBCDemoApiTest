@@ -61,11 +61,17 @@ public class StepDefination extends Utils {
 
 	@Then("I verify response contains {string}")
 	public void in_reponse_body_is(String expectedValue) {
-
-		String resp = response.asString();
-		JsonPath js = new JsonPath(resp);
-		Assert.assertTrue(resp.contains(expectedValue));
-		Assert.assertEquals(getYesterdayDateString(), js.get("date").toString());
+		String resp = null;
+		if (response.getStatusCode() == 200) {
+			resp = response.asString();
+			JsonPath js = new JsonPath(resp);
+			Assert.assertTrue(resp.contains(expectedValue));
+			Assert.assertEquals(getYesterdayDateString(), js.get("date").toString());
+		} else {
+			resp = response.asString();
+			JsonPath js = new JsonPath(resp);
+			Assert.assertTrue(resp.contains(expectedValue));
+		}
 	}
 
 	@Then("API call the status code {int}")
@@ -100,6 +106,13 @@ public class StepDefination extends Utils {
 		String resp = response.asString();
 		JsonPath js = new JsonPath(resp);
 		Assert.assertNotEquals(expectedDate, js.get("date").toString());
+	}
+
+	@Then("I verify defualt base response {string}")
+	public void i_verify_defualt_base_response(String baseResponse) {
+		String resp = response.asString();
+		JsonPath js = new JsonPath(resp);
+		Assert.assertEquals(baseResponse, js.get("base").toString());
 	}
 
 }

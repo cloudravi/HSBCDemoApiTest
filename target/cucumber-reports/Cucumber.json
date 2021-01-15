@@ -3,20 +3,20 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-01-15T14:19:47.905Z",
-        "line": 45,
-        "name": "verify status and response is displayed for symbols and base",
+        "start_timestamp": "2021-01-15T16:03:35.945Z",
+        "line": 31,
+        "name": "verify invalid values for base",
         "description": "",
-        "id": "validating-foreign-rate-api;verify-status-and-response-is-displayed-for-symbols-and-base;;2",
+        "id": "validating-foreign-rate-api;verify-invalid-values-for-base",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1383865000,
+              "duration": 972275000,
               "status": "passed"
             },
-            "line": 40,
+            "line": 32,
             "name": "load Foreign Rate Api url",
             "match": {
               "location": "stepDefinations.StepDefination.load_foreign_rate_api_url()"
@@ -25,261 +25,59 @@
           },
           {
             "result": {
-              "duration": 1398375000,
+              "duration": 1625230000,
               "status": "passed"
             },
-            "line": 41,
-            "name": "user calls API with valid \"2021-01-04\", \"symbols\" and \"USD\"",
+            "line": 33,
+            "name": "user calls \"base\" foreign exchange rate Get request with value \"abc\"",
             "match": {
               "arguments": [
-                {
-                  "val": "\"2021-01-04\"",
-                  "offset": 26
-                },
-                {
-                  "val": "\"symbols\"",
-                  "offset": 40
-                },
-                {
-                  "val": "\"USD\"",
-                  "offset": 54
-                }
-              ],
-              "location": "stepDefinations.StepDefination.user_calls_api_with_valid_and(java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 94178418000,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "I verify response showing proper \"2021-01-04\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2021-01-04\"",
-                  "offset": 33
-                }
-              ],
-              "location": "stepDefinations.StepDefination.i_verify_response_showing_proper(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RUN"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-01-15T14:21:25.229Z",
-        "line": 46,
-        "name": "verify status and response is displayed for symbols and base",
-        "description": "",
-        "id": "validating-foreign-rate-api;verify-status-and-response-is-displayed-for-symbols-and-base;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1104000,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "load Foreign Rate Api url",
-            "match": {
-              "location": "stepDefinations.StepDefination.load_foreign_rate_api_url()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 641260000,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "user calls API with valid \"2021-01-14\", \"symbols\" and \"GBP\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2021-01-14\"",
-                  "offset": 26
-                },
-                {
-                  "val": "\"symbols\"",
-                  "offset": 40
-                },
-                {
-                  "val": "\"GBP\"",
-                  "offset": 54
-                }
-              ],
-              "location": "stepDefinations.StepDefination.user_calls_api_with_valid_and(java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1591876000,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "I verify response showing proper \"2021-01-14\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2021-01-14\"",
-                  "offset": 33
-                }
-              ],
-              "location": "stepDefinations.StepDefination.i_verify_response_showing_proper(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RUN"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-01-15T14:21:27.505Z",
-        "line": 47,
-        "name": "verify status and response is displayed for symbols and base",
-        "description": "",
-        "id": "validating-foreign-rate-api;verify-status-and-response-is-displayed-for-symbols-and-base;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 810000,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "load Foreign Rate Api url",
-            "match": {
-              "location": "stepDefinations.StepDefination.load_foreign_rate_api_url()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 95967000,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "user calls API with valid \"2021-01-05\", \"base\" and \"USD\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2021-01-05\"",
-                  "offset": 26
-                },
                 {
                   "val": "\"base\"",
-                  "offset": 40
+                  "offset": 11
                 },
                 {
-                  "val": "\"USD\"",
-                  "offset": 51
+                  "val": "\"abc\"",
+                  "offset": 63
                 }
               ],
-              "location": "stepDefinations.StepDefination.user_calls_api_with_valid_and(java.lang.String,java.lang.String,java.lang.String)"
+              "location": "stepDefinations.StepDefination.user_calls_foreign_exchange_rate_get_request(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 986347000,
+              "duration": 1756000,
               "status": "passed"
             },
-            "line": 42,
-            "name": "I verify response showing proper \"2021-01-05\"",
+            "line": 34,
+            "name": "the API call is success with status code 400",
             "match": {
               "arguments": [
                 {
-                  "val": "\"2021-01-05\"",
-                  "offset": 33
+                  "val": "400",
+                  "offset": 41
                 }
               ],
-              "location": "stepDefinations.StepDefination.i_verify_response_showing_proper(java.lang.String)"
+              "location": "stepDefinations.StepDefination.the_api_call_is_success_with_status_code(int)"
             },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RUN"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-01-15T14:21:28.623Z",
-        "line": 48,
-        "name": "verify status and response is displayed for symbols and base",
-        "description": "",
-        "id": "validating-foreign-rate-api;verify-status-and-response-is-displayed-for-symbols-and-base;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1165000,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "load Foreign Rate Api url",
-            "match": {
-              "location": "stepDefinations.StepDefination.load_foreign_rate_api_url()"
-            },
-            "keyword": "Given "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 379496000,
+              "duration": 530805000,
               "status": "passed"
             },
-            "line": 41,
-            "name": "user calls API with valid \"2021-01-12\", \"base\" and \"GBP\"",
+            "line": 35,
+            "name": "I verify response error message \"Base \u0027abc\u0027 is not supported.\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"2021-01-12\"",
-                  "offset": 26
-                },
-                {
-                  "val": "\"base\"",
-                  "offset": 40
-                },
-                {
-                  "val": "\"GBP\"",
-                  "offset": 51
+                  "val": "\"Base \u0027abc\u0027 is not supported.\"",
+                  "offset": 32
                 }
               ],
-              "location": "stepDefinations.StepDefination.user_calls_api_with_valid_and(java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 788593000,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "I verify response showing proper \"2021-01-12\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2021-01-12\"",
-                  "offset": 33
-                }
-              ],
-              "location": "stepDefinations.StepDefination.i_verify_response_showing_proper(java.lang.String)"
+              "location": "stepDefinations.StepDefination.i_verify_response_error_message(java.lang.String)"
             },
             "keyword": "And "
           }
